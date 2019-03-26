@@ -2,7 +2,9 @@
 %author: Jakub Tesárek
 %date: 2019-03-23
 
-# 00P - The Power of Metaclasses
+-> # 00P - The Power of Metaclasses <-
+-> Jakub Tesárek <-
+-> https://github.com/JakubTesarek/power-of-metaclasses <-
 
 ---
 # Everything is an object
@@ -95,5 +97,9 @@ is actually:
 Klass = type.__new__(type, 'Klass', {'greet': <function 0x108b20510>})
 type.__init__(Klass, 'Klass', (Parent,), {'greet': <function 0x108b20510>})
 ```
+
 ---
 
+# Demo time!
+**https://github.com/JakubTesarek/power-of-metaclasses**
+run tests: `py.test`
