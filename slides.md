@@ -103,3 +103,17 @@ type.__init__(Klass, 'Klass', (Parent,), {'greet': <function 0x108b20510>})
 -> # Demo time! <-
 -> **bit.ly/metaclass** <-
 -> run tests: `py.test` <-
+
+---
+
+# Django-like model
+
+```python
+from django.db import models
+
+class Person(models.Model):
+    name = models.CharField(max_length=50)
+    address = models.PositiveIntegerField()
+    pronoun = models.CharField(max_length=300)
+```
+
