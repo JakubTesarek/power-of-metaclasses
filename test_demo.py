@@ -1,3 +1,5 @@
+""" Tests to problem presented in 'The Power of Metaclasses' presentation. """
+
 import pytest
 from demo import Model, Attribute
 
