@@ -1,19 +1,19 @@
 """ Solution to problem presented in 'The Power of Metaclasses' presentation. """
 
-class Attribute:
+class IntegerAttribute:
     """ Attribute generates methods that can be attached to another classes. """
 
     def __init__(self, default=None, maximum=None):
         """
         Args:
-            default (float): default value for getter (is not validated)
-            maximum (float): max value for setter
+            default (int): default value for getter (is not validated)
+            maximum (int): max value for setter
         """
         self.default = default
         self.maximum = maximum
 
     def get_setter(self, name):
-        """ Creates valitading setter method.
+        """ Creates validating setter method.
 
         Args:
             name (str): Name of attribute to save the value to. This is
@@ -29,8 +29,10 @@ class Attribute:
             Args:
                 this (obj): Object this method is attached to after it's
                 generated. NOT instance of Attribute.
-                value (obj): Value to be set
+                value (int): Value to be set
             """
+            if not isinstance(value, int):
+                raise TypeError(f'{value} is not of type int')
             if self.maximum is not None and value > self.maximum:
                 raise ValueError(f'{value} is larger than {self.maximum}')
             setattr(this, name, value)
@@ -68,7 +70,7 @@ class ModelMeta(type):
         """
         for key in list(dct):
             attr = dct[key]
-            if isinstance(attr, Attribute):
+            if isinstance(attr, IntegerAttribute):
                 dct[f'set_{key}'] = attr.get_setter(key)
                 dct[f'get_{key}'] = attr.get_getter(key)
                 del dct[key]

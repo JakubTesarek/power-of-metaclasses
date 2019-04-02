@@ -1,4 +1,4 @@
-class Attribute:
+class IntegerAttribute:
     pass
 
 
