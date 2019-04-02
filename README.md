@@ -1,4 +1,4 @@
-# 00P - Power of Metaclasses
+# Power of Metaclasses
 This repository contains presentation slides and demo scripts from Mobile EMEA Summit - Czech Republic 2019.
 
 ## Presentation

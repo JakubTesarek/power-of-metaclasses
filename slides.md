@@ -1,8 +1,8 @@
-%title: 00P - The Power of Metaclasses
+%title: The Power of Metaclasses
 %author: Jakub Tesárek
 %date: 2019-03-23
 
--> # 00P - The Power of Metaclasses <-
+-> # The Power of Metaclasses <-
 -> Jakub Tesárek <-
 -> bit.ly/metaclass <-
 
