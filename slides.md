@@ -4,7 +4,7 @@
 
 -> # 00P - The Power of Metaclasses <-
 -> Jakub Tesárek <-
--> https://github.com/JakubTesarek/power-of-metaclasses <-
+-> bit.ly/metaclass <-
 
 ---
 # Everything is an object
@@ -100,6 +100,6 @@ type.__init__(Klass, 'Klass', (Parent,), {'greet': <function 0x108b20510>})
 
 ---
 
-# Demo time!
-**https://github.com/JakubTesarek/power-of-metaclasses**
-run tests: `py.test`
+-> # Demo time! <-
+-> **bit.ly/metaclass** <-
+-> run tests: `py.test` <-
