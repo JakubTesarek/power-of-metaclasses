@@ -82,20 +82,20 @@ Quiz. What's the output of this command?
 ---
 
 ```python
-class Greeter(Parent, metaclass=type):
-    def greet(self):
-        print 'hello'
+class Troll(User, metaclass=type):
+    def taunt(self):
+        print('trololo' * 1000)
 ```
 ^
 is actually:
 ```python
-Greeter = type('Greeter', (Parent,), {'greet': <function 0x108b20510>})
+Troll = type('Troll', (User,), {'taunt': <function 0x108b20510>})
 ```
 ^
 is actually:
 ```python
-Klass = type.__new__(type, 'Klass', {'greet': <function 0x108b20510>})
-type.__init__(Klass, 'Klass', (Parent,), {'greet': <function 0x108b20510>})
+Troll = type.__new__(type, 'Troll', {'taunt': <function 0x108b20510>})
+type.__init__(Troll, 'Troll', (Troll,), {'taunt': <function 0x108b20510>})
 ```
 
 ---
