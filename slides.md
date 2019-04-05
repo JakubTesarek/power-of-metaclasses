@@ -6,6 +6,9 @@
 -> Jakub Tesárek <-
 -> bit.ly/metaclass <-
 
+*Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don't.*
+-- Tim Peters
+
 ---
 # Everything is an object
 
