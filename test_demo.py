@@ -15,6 +15,7 @@ def test_has_setter():
         attr = IntegerAttribute()
 
     assert 'set_attr' in dir(Mock)
+    assert callable(Mock.set_attr)
 
 
 def test_has_getter():
@@ -22,6 +23,7 @@ def test_has_getter():
         attr = IntegerAttribute()
 
     assert 'get_attr' in dir(Mock)
+    assert callable(Mock.get_attr)
 
 
 def test_set_and_get_value():
