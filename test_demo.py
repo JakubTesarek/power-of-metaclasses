@@ -15,6 +15,12 @@ def test_has_setter():
         attr = IntegerAttribute()
 
     assert 'set_attr' in dir(Mock)
+
+
+def test_setter_is_callable():
+    class Mock(Model):
+        attr = IntegerAttribute()
+
     assert callable(Mock.set_attr)
 
 
@@ -23,6 +29,13 @@ def test_has_getter():
         attr = IntegerAttribute()
 
     assert 'get_attr' in dir(Mock)
+    assert callable(Mock.get_attr)
+
+
+def test_getter_is_callable():
+    class Mock(Model):
+        attr = IntegerAttribute()
+
     assert callable(Mock.get_attr)
 
 
@@ -64,7 +77,7 @@ def test_accept_only_integers(invalid_argument):
         attr = IntegerAttribute()
 
     mock = Mock()
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError, match='is not of type int'):
         mock.set_attr(invalid_argument)
 
 
