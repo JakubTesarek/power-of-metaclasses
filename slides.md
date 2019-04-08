@@ -120,3 +120,8 @@ class Person(models.Model):
     pronoun = models.CharField(max_length=300)
 ```
 
+---
+
+-> # Resources <-
+
+- https://docs.python.org/3/reference/datamodel.html
