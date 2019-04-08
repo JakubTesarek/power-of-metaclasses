@@ -98,7 +98,7 @@ Troll = type('Troll', (User,), {'taunt': <function 0x108b20510>})
 is actually:
 ```python
 Troll = type.__new__(type, 'Troll', {'taunt': <function 0x108b20510>})
-type.__init__(Troll, 'Troll', (Troll,), {'taunt': <function 0x108b20510>})
+type.__init__(Troll, 'Troll', (Person,), {'taunt': <function 0x108b20510>})
 ```
 
 ---
