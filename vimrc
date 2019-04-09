@@ -1,8 +1,8 @@
-let @1 = "/__new__o		for key in list(dct):			attr = dct[key]			if isinstance(attr, IntegerAttribute):				del dct[key]:w"
-let @2 = "/del dctO				dct[f'set_{key}'] -€kb= None"
-let @3 = "/NoneO				def setter(this, value):					setattr(this, key, a€kbvau€kblue)	€kb/NoneCsetter:w"
-let @4 = "2GCdef get_setter(self, name):		def setter(this, value);A:			setattr(this, name, value)		return setter/isinstjddddf=C= attr.get_setter(key)"
-let @5 = "/return settero	def get_getter(self, name):		deg €kb€kbf getter(this)a:			return getattr(this, name)		return getter/isinstanceo				dct[f'get_{key}'] = attr.get_getter(key):w"
-let @6 = ":1o	def __inin€kbt__(self, defaut-€kb€kblt=€kb=None):		self.default -€kb= fa€kb€kbdefaulto/return getattrf)i, self.default:w"
-let @7 = "/def settero			if not isinstance(value, int):				raise TypeErrr€kbor('€kbf'{value} is not of type int'):w"
-let @8 = "/default,€kb-=€kb€kb=Nonef)i, maximum=maximum€kb€kb€kb€kb€kb€kb€kbNonejo		self.maximum -€kb= maximum/TypeErroro			if self.maximum is not None and value > self.maximum:				raise ValueError(f'{value} is larger than /se€kb€kb€kb/e€kb€kb{self.maximum}'):€kb:w"
+let @a = "/returnO		for key in list(dct):			attr -€kb= dct[key]			if isinstance(attr, IntegerAttribute):				del [€kbdct[key]:nohl:w"
+let @s = "/del O				dct[f'set_{key}'] -€kb= None:nohl:w"
+let @d = "/isinstanceo				def setter(this, value):					setattr(this, key, value)/= NoneCse€kb€kb= setter:w:nohl:w"
+let @f = "2GCdef get_setter(self, name):		set€kb€kb€kbdef setter(this, value):			setattr(this, name, value)		return setter/= setterCattr€kb€kb€kb€kb= attr.get_setter(key)/isinstajdddd:w:nohl"
+let @g = "/return settero	def get_s€kbgetter(self, name):		def getter(this):			return getattr(this, name)		return getter/attr.get_settero				dct[f'get_{key}'] = attr.get_getter(key}€kb):nohl:w"
+let @h = "/setattrO			if not isinstance(value, int):				raise TypeError(f'{value} is not of type int'):nohl:w"
+let @j = "1Go	def __init__(self, default-€kb=None):		self.default -€kb= default/getattrf)i, self.default:nohl:w"
+let @k = "/__initf)i, maximum-€kb=Nonejo		self.maximum -€kb= maximum/TypeErroro			if self.maximum is not None and value > self.maximum:				raise ValueError('€kbf'{value} is larger than {self.maximum}'):nohl:w"

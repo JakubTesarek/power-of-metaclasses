@@ -5,7 +5,7 @@ This repository contains presentation slides and demo scripts from Mobile EMEA S
 Presentation is written in markdown format. Any markdown reader should be able to parse it. In the presentation I used [mdp](https://github.com/visit1985/mdp).
 
 ## Demo
-If you're using python, you can load `vimrc` which contains pre-recorded macros `@1` - `@6` with steps to implement the solution.
+If you're using python, you can load `vimrc` which contains pre-recorded macros `@a` - `@k` with steps to implement the solution.
 
 ### Tests
 Tests and scripts are written for Python 3.6 with Pytest 4.3.
